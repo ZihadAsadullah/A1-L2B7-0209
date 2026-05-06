@@ -1,5 +1,4 @@
 //=========>>>Problem 1<<<===========//
-
 function filterEvenNumbers(numArr: number[]): number[] {
   return numArr.filter((num) => num % 2 === 0);
 }
@@ -14,3 +13,16 @@ function reverseString(str: string): string {
 }
 const resultP2 = reverseString('typescript');
 console.log(resultP2);
+
+//=========>>>Problem 3<<<===========//
+type StringOrNumber = string | number;
+function checkType(value: StringOrNumber): string | number {
+  if (typeof value === 'string') {
+    return 'String';
+  } else {
+    return 'Number';
+  }
+}
+const resultP3 = checkType('Hello');
+const resultP31 = checkType(42);
+console.log(resultP3, resultP31);
