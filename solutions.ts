@@ -4,5 +4,13 @@ function filterEvenNumbers(numArr: number[]): number[] {
   return numArr.filter((num) => num % 2 === 0);
 }
 const numbers: number[] = [1, 2, 3, 4, 5, 6];
-const result = filterEvenNumbers(numbers);
-console.log(result);
+const resultP1 = filterEvenNumbers(numbers);
+console.log(resultP1);
+
+//=========>>>Problem 2<<<===========//
+function reverseString(str: string): string {
+  const revStr = str.split('').reverse().join('');
+  return revStr;
+}
+const resultP2 = reverseString('typescript');
+console.log(resultP2);
