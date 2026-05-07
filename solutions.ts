@@ -34,3 +34,23 @@ function getProperty<X>(obj: X, key: keyof X): X[keyof X] {
 const user = { id: 1, name: 'John Doe', age: 21 };
 const resultP4 = getProperty(user, 'name');
 console.log(resultP4);
+
+//=========>>>Problem 5<<<===========//
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+interface ReadStatus extends Book {
+  isRead: boolean;
+}
+function toggleReadStatus(book: Book): ReadStatus {
+  return { ...book, isRead: true };
+}
+const myBook = {
+  title: 'TypeScript Guide',
+  author: 'Jane Doe',
+  publishedYear: 2024,
+};
+const result5 = toggleReadStatus(myBook);
+console.log(result5);
