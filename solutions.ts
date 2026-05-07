@@ -76,6 +76,7 @@ class Student extends Person {
 }
 const student = new Student('Alice', 20, 'A');
 console.log(student.getDetails());
+
 //=========>>>Problem 7<<<===========//
 function getIntersection(arr1: number[], arr2: number[]): number[] {
   return arr1.filter((matchItem) => arr2.includes(matchItem));
