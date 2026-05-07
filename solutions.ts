@@ -28,7 +28,7 @@ const resultP31 = checkType(42);
 console.log(resultP3, resultP31);
 
 //=========>>>Problem 4<<<===========//
-function getProperty<X>(obj: X, key: keyof X): X[keyof X] {
+function getProperty<T, X extends keyof T>(obj: T, key: X): T[X] {
   return obj[key];
 }
 const user = { id: 1, name: 'John Doe', age: 21 };
