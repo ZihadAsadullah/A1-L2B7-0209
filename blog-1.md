@@ -46,7 +46,7 @@ console.log(user.fName.toUpperCase());
 
 This code compiles successfully.
 
-But at runtime, it crashes because `age` is `undefined`.
+But at runtime, it crashes because `fName` is `undefined`.
 
 So `any` creates a "hole" in TypeScript's type safety system.
 
