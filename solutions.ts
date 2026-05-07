@@ -26,3 +26,11 @@ function checkType(value: StringOrNumber): string | number {
 const resultP3 = checkType('Hello');
 const resultP31 = checkType(42);
 console.log(resultP3, resultP31);
+
+//=========>>>Problem 4<<<===========//
+function getProperty<X>(obj: X, key: keyof X): X[keyof X] {
+  return obj[key];
+}
+const user = { id: 1, name: 'John Doe', age: 21 };
+const resultP4 = getProperty(user, 'name');
+console.log(resultP4);
