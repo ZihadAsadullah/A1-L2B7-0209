@@ -63,8 +63,6 @@ Generics solve this problem using single reusable function.
 
 ---
 
-...
-
 ## Generic in Arrays
 
 ```ts
